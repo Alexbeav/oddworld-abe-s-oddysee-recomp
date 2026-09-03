@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Oddworld: Abe's Oddysee",
+    "id": "SLUS-00190",
+    "boot_exe": "SLUS_001.90"
+  },
+  "marketing": {
+    "description": "Oddworld: Abe's Oddysee recompiled for modern systems using psxrecomp.",
+    "publisher": "GT Interactive",
+    "year": "1997",
+    "region": "USA",
+    "players": 2
+  },
+  "rom_identity": {
+    "cue_name": "Oddworld - Abe's Oddysee (USA) (Rev 2).cue",
+    "bin_name": "Oddworld - Abe's Oddysee (USA) (Rev 2).bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 675489696,
+      "md5": "cd0c2fd025a86f18ae8080cc81d2ebcc",
+      "sha1": "3507fb96d6c5d60f30b1d1b9e4b6dfc468f7cef0",
+      "sha256": "1c69fd850763dd784d1bd581ee72b0bda212ba8227b827c3b2d58bf9f82eee45",
+      "crc32": "13cdee87"
+    },
+    "disc_fp": "53170950f273d9b0f6ca66ebd8208d49c035cf71949a4b0869b558d67a9e33c2"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x8007F794",
+    "text_size": "0x00092000",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 728,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity).",
+    "This verified Redump release is a complete one-track disc."
+  ]
+}

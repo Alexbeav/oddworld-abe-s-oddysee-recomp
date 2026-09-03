@@ -1,0 +1,30 @@
+{
+  "cue_name": "Oddworld - Abe's Oddysee (USA) (Rev 2).cue",
+  "bin_name": "Oddworld - Abe's Oddysee (USA) (Rev 2).bin",
+  "track_count": 1,
+  "data_track_size": 675489696,
+  "data_track_md5": "cd0c2fd025a86f18ae8080cc81d2ebcc",
+  "data_track_sha1": "3507fb96d6c5d60f30b1d1b9e4b6dfc468f7cef0",
+  "data_track_sha256": "1c69fd850763dd784d1bd581ee72b0bda212ba8227b827c3b2d58bf9f82eee45",
+  "data_track_crc32": "13cdee87",
+  "boot_exe": "SLUS_001.90",
+  "serial": "SLUS-00190",
+  "serial_exe": "SLUS_001.90",
+  "volume_id": "SLUS_00190",
+  "display_name": "Oddworld: Abe's Oddysee",
+  "load_address": "0x80010000",
+  "entry_pc": "0x8007F794",
+  "text_size": "0x00092000",
+  "stack_base": "0x801FFFF0",
+  "require_cue": true,
+  "required_disc_fp": "53170950f273d9b0f6ca66ebd8208d49c035cf71949a4b0869b558d67a9e33c2",
+  "boot_exe_sha256": "fe715c1f66583aaf0e047c2a4f1a265fe1ad2d1f44452517d1cb8e334f897115",
+  "seed_count": 728,
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity).",
+    "This verified Redump release is a complete one-track disc."
+  ]
+}

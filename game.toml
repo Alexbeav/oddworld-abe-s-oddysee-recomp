@@ -1,0 +1,56 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "Oddworld: Abe's Oddysee"
+id = "SLUS-00190"
+players = 2
+exe = "disc/SLUS_001.90"
+disc = "disc/Oddworld - Abe's Oddysee (USA) (Rev 2).cue"
+load_address = "0x80010000"
+entry_pc = "0x8007F794"
+text_size = "0x00092000"
+stack_base = "0x801FFFF0"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Oddworld - Abe's Oddysee (USA) (Rev 2).bin"
+cue_name = "Oddworld - Abe's Oddysee (USA) (Rev 2).cue"
+boot_exe = "SLUS_001.90"
+known_sizes = [675489696]
+known_md5 = [
+  "cd0c2fd025a86f18ae8080cc81d2ebcc",
+]
+known_sha1 = [
+  "3507fb96d6c5d60f30b1d1b9e4b6dfc468f7cef0",
+]
+known_crc32 = [
+  "13cdee87",
+]
+
+[recompiler]
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+bios_config = "psxrecomp/bios/SCPH1001.toml"
+strict = true
+
+[runtime]
+window_title = "Oddworld: Abe's Oddysee Recompiled"
+memcard_dir = "saves"
+bios_hle = false
+openbios = false
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "53170950f273d9b0f6ca66ebd8208d49c035cf71949a4b0869b558d67a9e33c2"
